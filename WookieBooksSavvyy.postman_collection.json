@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "11f78a73-d68c-4602-8bc0-f49966277774",
+		"name": "WookieBooksSavvyy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "GetAllBooks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44364/Book",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44364",
+							"path": [
+								"Book"
+							]
+						},
+						"description": "Grabs all books from _BookDictionary"
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingleBookWithID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44364/Book/Book1Key",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44364",
+							"path": [
+								"Book",
+								"Book1Key"
+							]
+						},
+						"description": "Takes in key and grabs the first book in the dictionary"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "PostNewBook",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"New Book\",\r\n    \"description\" : \"newest book in the market\",\r\n    \"author\" : \"new author\",\r\n    \"imageUrl\" : \"https://i.pinimg.com/474x/93/d6/30/93d6306b90bdbc171b17443430a6f328.jpg\",\r\n    \"price\" : 10\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44364/Book",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44364",
+							"path": [
+								"Book"
+							]
+						},
+						"description": "Given book information add creates and adds new book to dictionary"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "UpdateBook1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"First book (editted)\",\r\n    \"description\" : \"edit\",\r\n    \"author\" : \"editted\",\r\n    \"imageUrl\" : \"https://i.pinimg.com/474x/93/d6/30/93d6306b90bdbc171b17443430a6f328.jpg\",\r\n    \"price\" : 999\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44364/Book/Book1Key",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44364",
+							"path": [
+								"Book",
+								"Book1Key"
+							]
+						},
+						"description": "Updates First book with values in body"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "DeleteBookWithID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44364/Book/Book1Key",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44364",
+							"path": [
+								"Book",
+								"Book1Key"
+							]
+						},
+						"description": "Delete the First book from the dictionary"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
