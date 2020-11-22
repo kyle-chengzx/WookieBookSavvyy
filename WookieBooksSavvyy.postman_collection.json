@@ -30,14 +30,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://localhost:44364/Book",
+							"raw": "https://localhost:44364/Books",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
 							"port": "44364",
 							"path": [
-								"Book"
+								"Books"
 							]
 						},
 						"description": "Grabs all books from _BookDictionary"
@@ -57,8 +57,8 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
+								"type": "text",
+								"value": "application/json"
 							}
 						],
 						"body": {
@@ -66,14 +66,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://localhost:44364/Book/Book1Key",
+							"raw": "https://localhost:44364/Books/Book1Key",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
 							"port": "44364",
 							"path": [
-								"Book",
+								"Books",
 								"Book1Key"
 							]
 						},
@@ -106,14 +106,14 @@
 							"raw": "{\r\n    \"title\" : \"New Book\",\r\n    \"description\" : \"newest book in the market\",\r\n    \"author\" : \"new author\",\r\n    \"imageUrl\" : \"https://i.pinimg.com/474x/93/d6/30/93d6306b90bdbc171b17443430a6f328.jpg\",\r\n    \"price\" : 10\r\n}"
 						},
 						"url": {
-							"raw": "https://localhost:44364/Book",
+							"raw": "https://localhost:44364/Books",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
 							"port": "44364",
 							"path": [
-								"Book"
+								"Books"
 							]
 						},
 						"description": "Given book information add creates and adds new book to dictionary"
@@ -145,14 +145,14 @@
 							"raw": "{\r\n    \"title\" : \"First book (editted)\",\r\n    \"description\" : \"edit\",\r\n    \"author\" : \"editted\",\r\n    \"imageUrl\" : \"https://i.pinimg.com/474x/93/d6/30/93d6306b90bdbc171b17443430a6f328.jpg\",\r\n    \"price\" : 999\r\n}"
 						},
 						"url": {
-							"raw": "https://localhost:44364/Book/Book1Key",
+							"raw": "https://localhost:44364/Books/Book1Key",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
 							"port": "44364",
 							"path": [
-								"Book",
+								"Books",
 								"Book1Key"
 							]
 						},
@@ -173,8 +173,8 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
+								"type": "text",
+								"value": "application/json"
 							}
 						],
 						"body": {
@@ -182,14 +182,14 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://localhost:44364/Book/Book1Key",
+							"raw": "https://localhost:44364/Books/Book1Key",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
 							"port": "44364",
 							"path": [
-								"Book",
+								"Books",
 								"Book1Key"
 							]
 						},

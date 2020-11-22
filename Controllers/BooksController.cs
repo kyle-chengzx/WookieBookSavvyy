@@ -10,7 +10,7 @@ namespace WookieBookSavvyy.Controllers
 
     [ApiController]
     [Route("[controller]")]
-    public class BookController : ControllerBase
+    public class BooksController : ControllerBase
     {
         //creates a dictionary and adds to books by default
         private static Dictionary<string, Book> _bookDictionary = new Dictionary<string, Book>()
